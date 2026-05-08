@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_myterraform_1778226444823-push-trigger-input-set
+  identifier: Build_myterraform_1778226444823pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: practise_project
+  pipeline:
+    identifier: Build_myterraform_1778226444823
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
