@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mydocker
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mydocker
+  template:
+    metadata:
+      labels:
+        app: mydocker
+    spec:
+      containers:
+        - name: mydocker
+          image: <+artifact.image>
+          ports:
+            - containerPort: 80
