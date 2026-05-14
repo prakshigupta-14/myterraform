@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: mydocker
-          image: <+artifact.image>
+          image: prakshigupta14/mydocker:latest
           ports:
             - containerPort: 80
